@@ -1,0 +1,13 @@
+name: Pipeline
+on: push
+jobs:
+  Pipeline-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "first actions"
+      - name: Show uptime
+        run: uptime
+      - name: Where am I?
+        run: pwd
+      - name: Who am I?
+        run: whoami
